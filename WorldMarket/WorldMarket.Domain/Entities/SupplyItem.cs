@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using WorldMarket.Domain.Common;
 
 namespace WorldMarket.Domain.Entities
 {
-    internal class SupplyItem
+    public class SupplyItem : EntityBase
     {
+        public int Quantity { get; set; }
+        public decimal UnitPrice { get; set; }
+
+        public int ProductId { get; set; }
+        public Product Product { get; set; }
+
+        public int SupplyId { get; set; }
+        public Supply Supply { get; set; }
     }
 }

@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using WorldMarket.Domain.Common;
 
 namespace WorldMarket.Domain.Entities
 {
-    internal class Customer
+    public class Customer : EntityBase
     {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string PhoneNumber { get; set; }
+
+        public virtual ICollection<Sale> Sales { get; set; }
     }
 }
