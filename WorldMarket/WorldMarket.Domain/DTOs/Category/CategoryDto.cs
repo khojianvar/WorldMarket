@@ -1,4 +1,6 @@
-﻿namespace WorldMarket.Domain.DTOs.Category
+﻿using WorldMarket.Domain.DTOs.Product;
+
+namespace WorldMarket.Domain.DTOs.Category
 {
     public record class CategoryDto(
         int Id,

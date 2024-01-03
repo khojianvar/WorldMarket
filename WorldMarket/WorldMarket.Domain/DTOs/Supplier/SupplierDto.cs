@@ -1,4 +1,6 @@
-﻿namespace WorldMarket.Domain.DTOs.Supplier
+﻿using WorldMarket.Domain.DTOs.Supply;
+
+namespace WorldMarket.Domain.DTOs.Supplier
 {
     public record SupplierDto(
         int Id,
