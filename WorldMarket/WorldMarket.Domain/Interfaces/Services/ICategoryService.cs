@@ -1,8 +1,6 @@
 ﻿using WorldMarket.Domain.DTOs.Category;
-using WorldMarket.Domain.DTOs.Product;
 using WorldMarket.Domain.Pagniation;
 using WorldMarket.Domain.ResourceParameters;
-using WorldMarket.ResourceParameters;
 
 namespace WorldMarket.Domain.Interfaces.Services
 {
