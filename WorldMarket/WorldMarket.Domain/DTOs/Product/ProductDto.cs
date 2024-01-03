@@ -1,4 +1,7 @@
-﻿namespace WorldMarket.Domain.DTOs.Product
+﻿using WorldMarket.Domain.DTOs.SaleItem;
+using WorldMarket.Domain.DTOs.SupplyItem;
+
+namespace WorldMarket.Domain.DTOs.Product
 {
     public record class ProductDto(
         int Id,
