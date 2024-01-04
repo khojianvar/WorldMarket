@@ -5,8 +5,6 @@ using WorldMarket.Domain.Interfaces.Services;
 using WorldMarket.Domain.Pagniation;
 using WorldMarket.Domain.ResourceParameters;
 using WorldMarket.Infrastructure.Persistence;
-using WorldMarket.ResourceParameters;
-using Microsoft.EntityFrameworkCore.Internal;
 
 namespace WorldMarket.Services
 {

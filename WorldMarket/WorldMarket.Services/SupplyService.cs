@@ -1,13 +1,10 @@
 ﻿using AutoMapper;
-using WorldMarket.Domain.DTOs.Sale;
 using WorldMarket.Domain.DTOs.Supply;
 using WorldMarket.Domain.Entities;
 using WorldMarket.Domain.Interfaces.Services;
 using WorldMarket.Domain.Pagniation;
 using WorldMarket.Domain.ResourceParameters;
 using WorldMarket.Infrastructure.Persistence;
-using Microsoft.Extensions.Logging;
-using System.Data.Common;
 
 namespace WorldMarket.Services
 {

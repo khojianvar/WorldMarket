@@ -1,17 +1,11 @@
 ﻿using AutoMapper;
 using WorldMarket.Domain.DTOs.Category;
-using WorldMarket.Domain.DTOs.Product;
 using WorldMarket.Domain.Entities;
 using WorldMarket.Domain.Exceptions;
-using WorldMarket.Domain.Interfaces.Repositories;
 using WorldMarket.Domain.Interfaces.Services;
 using WorldMarket.Domain.Pagniation;
 using WorldMarket.Domain.ResourceParameters;
 using WorldMarket.Infrastructure.Persistence;
-using WorldMarket.ResourceParameters;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System.Data.Common;
 
 namespace WorldMarket.Services
 {
