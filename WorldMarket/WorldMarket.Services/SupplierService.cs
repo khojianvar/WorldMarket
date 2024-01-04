@@ -5,14 +5,6 @@ using WorldMarket.Domain.Interfaces.Services;
 using WorldMarket.Domain.Pagniation;
 using WorldMarket.Domain.ResourceParameters;
 using WorldMarket.Infrastructure.Persistence;
-using WorldMarket.ResourceParameters;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Data.Common;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WorldMarket.Services
 {
