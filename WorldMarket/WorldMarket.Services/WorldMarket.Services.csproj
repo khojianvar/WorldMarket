@@ -27,4 +27,9 @@
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WorldMarket.Domain\WorldMarket.Domain.csproj" />
+    <ProjectReference Include="..\WorldMarket.Infrastructure\WorldMarket.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
