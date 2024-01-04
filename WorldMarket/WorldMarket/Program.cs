@@ -1,3 +1,5 @@
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using WorldMarket.Extensions;
 using WorldMarket.Middlewares;
 
@@ -13,6 +15,20 @@ builder.Services.ConfigureLogger();
 builder.Services.ConfigureRepositories();
 builder.Services.ConfigureDatabaseContext();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddAuthentication("Bearer")
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new()
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = "anvar-api",
+            ValidAudience = "anvar-mobile",
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes("anvarSekretKalitSozMalades"))
+        };
+    });
 
 var app = builder.Build();
 
@@ -31,6 +47,8 @@ if (app.Environment.IsDevelopment())
 app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.UseHttpsRedirection();
+
+app.UseAuthorization();
 
 app.UseAuthorization();
 
